@@ -28,7 +28,9 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 text = str( input("Please enter a string of text (the bigger the better): "))
 print("You entered " + '"' + text + '"' ". Now jumble it:")
 
-def backwards(x):
-    print(x)
+
+def backwards(text):
+    for l in text:
+        print(l)
     
 backwards(text)
