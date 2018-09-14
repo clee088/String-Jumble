@@ -32,11 +32,18 @@ words = []
 
 def reverse(text):
     print(text[::-1])
-    return text
 
 def rco(text):
-    print(text[-1::-1])
-    return text
+    words = text.split(" ")
+    words = words[-1::-1]
+    text = ' '.join(words)
+    print(text)
+    
+def cor(text):
+    text = text[::-1]
+    word = words[-1::-1]
+    print(text)
 
 reverse(text)
 rco(text)
+cor(text)
