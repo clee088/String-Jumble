@@ -28,11 +28,15 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 text = str(input("Please enter a string of text (the bigger the better): "))
 print('You entered "{0}". Now jumble it:'.format(text))
 
+words = []
+
 def reverse(text):
     print(text[::-1])
-reverse(text)
+    return text
 
 def rco(text):
-    
-        
+    print(text[-1::-1])
+    return text
+
+reverse(text)
 rco(text)
