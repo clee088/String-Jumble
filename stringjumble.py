@@ -1,7 +1,7 @@
 """
 stringjumble.py
 Author: Christopher Lee
-Credit: <sources>
+Credit: https://www.geeksforgeeks.org/python-reverse-word-sentence/, https://www.geeksforgeeks.org/reverse-words-given-string-python/
 
 Assignment:
 
@@ -40,9 +40,10 @@ def rco(text):
     print(text)
     
 def cor(text):
-    text = text[::-1]
-    word = words[-1::-1]
-    print(text)
+    sent = text.split(" ")
+    nw = [w[::-1] for w in sent]
+    nt = ' '.join(nw)
+    print(nt)
 
 reverse(text)
 rco(text)
